@@ -1,28 +1,15 @@
 ---
-title: 'Introduction'
-description: 'Example section for showcasing API endpoints'
+title: 'API Introduction'
+description: 'Programmatic access to image, video, and enhancement tools'
 ---
 
-<Note>
-  If you're not looking to build API reference documentation, you can delete
-  this section by removing the api-reference folder.
-</Note>
+## Overview
 
-## Welcome
-
-There are two ways to build API documentation: [OpenAPI](https://mintlify.com/docs/api-playground/openapi/setup) and [MDX components](https://mintlify.com/docs/api-playground/mdx/configuration). For the starter kit, we are using the following OpenAPI specification.
-
-<Card
-  title="Plant Store Endpoints"
-  icon="leaf"
-  href="https://github.com/mintlify/starter/blob/main/api-reference/openapi.json"
->
-  View the OpenAPI specification file
-</Card>
+Use the API to automate image and video generation, apply upscaling, motion regions, and style changes. Endpoints and schemas are defined in the OpenAPI specification included in this repository.
 
 ## Authentication
 
-All API endpoints are authenticated using Bearer tokens and picked up from the specification file.
+All endpoints use Bearer token authentication as defined in the spec.
 
 ```json
 "security": [
@@ -31,3 +18,9 @@ All API endpoints are authenticated using Bearer tokens and picked up from the s
   }
 ]
 ```
+
+## Next steps
+
+- Review the OpenAPI spec in `api-reference/openapi.json`
+- Explore endpoint examples in this section
+- Generate a token and call endpoints from your workflow

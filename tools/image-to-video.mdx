@@ -1,0 +1,37 @@
+---
+title: "Image to Video"
+description: "Animate a single image or storyboard into motion"
+---
+
+## Overview
+
+Start from a still image and add motion. Great for product shots, key art, and social posts.
+
+## Source guidelines
+
+- High-resolution images with clear subjects and clean composition work best.
+- Avoid heavy compression and extreme blur.
+- Ensure important regions (faces, logos) are unobstructed for better fidelity.
+
+## Parameters
+
+- `durationSeconds`: Default 8; 4–12 for social-friendly clips.
+- `frameRate`: Default 24.
+- `motionStrength`: Default 0.6; 0.3–0.8 determines intensity.
+- `motionDirection`: e.g., pan left/right, zoom in/out, parallax layers.
+- `stabilizationStrength`: Default 0.5; reduces jitter.
+
+## Workflow
+
+- Upload your base image.
+- Choose motion type and strength; set duration and frame rate.
+- Generate multiple takes and evaluate subject stability and background motion.
+- Refine with Motion Brush for targeted movement; export and upscale as needed.
+
+## Examples
+
+- Product shot with parallax: foreground product stable, background gentle parallax left → right.
+-  Settings: `durationSeconds=6`, `motionStrength=0.5`, `stabilizationStrength=0.6`
+
+- Landscape zoom: slow push-in across a sunset vista.
+-  Settings: `durationSeconds=10`, `motionStrength=0.4`, `motionDirection=zoom-in`
