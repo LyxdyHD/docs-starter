@@ -10,8 +10,7 @@ Create videos directly from a prompt. Control duration, frame rate, stabilizatio
 
 ## Parameters
 
-- `durationSeconds`: Default 8; recommended 4–15 depending on platform.
-- `frameRate`: Default 24; recommended 24–30 for smooth motion.
+- `durationSeconds`: Up to 8 seconds (default 8).
 - `stabilizationStrength`: Default 0.5; 0.3–0.7 reduces jitter while preserving dynamics.
 - `styleIntensity`: Default 0.6; 0.4–0.8 balances realism vs stylization.
 - `guidanceScale`: Default 7; 5–9 controls adherence to prompt.
@@ -19,19 +18,15 @@ Create videos directly from a prompt. Control duration, frame rate, stabilizatio
 ## Workflow
 
 - Write a clear prompt with subject, environment, camera, lighting, and motion.
-- Set duration and frame rate; adjust stabilization and style intensity.
+- Set duration (≤ 8s); adjust stabilization and style intensity.
 - Generate multiple takes; compare continuity, focus, and pacing.
 - Export MP4/WebM at the desired aspect ratio; upscale if needed.
 
 ## Examples
 
-- Prompt: "A futuristic space battle with laser beams and explosions, cinematic lighting, epic scale"
--  Settings: `durationSeconds=8`, `frameRate=24`, `stabilizationStrength=0.5`, `styleIntensity=0.7`
--  Output: fast-paced battle shots with bright laser streaks and dramatic explosions.
-
-- Prompt: "Slow-motion ocean waves at sunset, warm color grading, gentle camera drift"
--  Settings: `durationSeconds=12`, `frameRate=24`, `stabilizationStrength=0.6`, `styleIntensity=0.5`
--  Output: smooth waves with orange-pink sky and subtle drift.
+- Anime ceremonial dance — moonlit ruined courtyard; rain; cyan energy; dynamic camera moves; tranquil ending.
+- Bookstore golden hour — slow dolly; dust motes and god rays; intimate smile.
+- Subway isolation — handheld sway; grain and halation; tear catches flicker; warm station lights sweep in.
 
 ## Tips
 
@@ -69,86 +64,43 @@ Prompt = Subject + Subject Description + Subject Movement + Scene + Scene Descri
   </div>
 </Columns>
 
-## Video examples
+## Video gallery (8s max, start/pause only)
 
-<Columns cols={2}>
+<Columns cols={3}>
   <div>
-    <iframe
+    <video
       className="w-full aspect-video rounded-xl"
-      src="https://player.cloudinary.com/embed/?cloud_name=dffj8ly14&public_id=download_13_c1jasa&profile=cld-default"
-      title="Anime ceremonial dance"
-      frameBorder="0"
-      referrerPolicy="strict-origin-when-cross-origin"
-      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-      allowFullScreen
-    ></iframe>
+      src="https://res.cloudinary.com/dffj8ly14/video/upload/download_13_c1jasa.mp4"
+      controls
+      playsInline
+      loop
+      controlsList="nodownload noremoteplayback nofullscreen noplaybackrate"
+      disablePictureInPicture
+    ></video>
+    <small>Anime — ceremonial dance</small>
   </div>
   <div>
-    <AccordionGroup>
-      <Accordion icon="pen-to-square" title="Prompt used">
-        An 8-second, ultra-dynamic 2D animation sequence, rendered in a modern, high-budget anime style (similar to MAPPA or Ufotable).
-        [VIDEO STYLE]: Masterpiece quality, 4K resolution. Fluid, high-framerate sakuga animation with dramatic, cinematic camera work. The visuals are defined by sharp line art, intense particle effects, and dynamic lighting that flickers and casts long, moving shadows.
-        [SCENE & NARRATIVE]: A climactic, ceremonial dance in the moonlit, crumbling courtyard of a ruined gothic cathedral. Rain is lashing down in stylized, slashing strokes.
-        [SEQUENCE OF EVENTS]:
-        [0.0s - 2.0s]: The Invocation. Low-angle, ultra-wide shot; silver-haired protagonist rises and sweeps arms; cyan energy particles coalesce with rain.
-        [2.0s - 4.0s]: The Crescendo. Crash-zoom to eyes; dutch angle spin; cyan particles explode outward as non-violent light shockwave revealing intricate stone carvings.
-        [4.0s - 6.5s]: The Manifestation. 360° camera arc; hands together; cyan particles concentrate into luminous glyph or lotus forming and pulsing.
-        [6.5s - 8.0s]: The Aftermath. Slow push-in to serene smile; creation floats between hands; rain softens; gentle cyan light on face; fade to black.
-      </Accordion>
-    </AccordionGroup>
-  </div>
-</Columns>
-
-<Columns cols={2}>
-  <div>
-    <iframe
+    <video
       className="w-full aspect-video rounded-xl"
-      src="https://player.cloudinary.com/embed/?cloud_name=dffj8ly14&public_id=download_12_bt4son&profile=cld-default"
-      title="Bookstore golden hour"
-      frameBorder="0"
-      referrerPolicy="strict-origin-when-cross-origin"
-      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-      allowFullScreen
-    ></iframe>
+      src="https://res.cloudinary.com/dffj8ly14/video/upload/download_12_bt4son.mp4"
+      controls
+      playsInline
+      loop
+      controlsList="nodownload noremoteplayback nofullscreen noplaybackrate"
+      disablePictureInPicture
+    ></video>
+    <small>Bookstore — golden hour</small>
   </div>
   <div>
-    <AccordionGroup>
-      <Accordion icon="pen-to-square" title="Prompt used">
-        Ultra-realistic cinematic video, rendered in Unreal Engine 5 with path-traced global illumination and a high-poly asset library.
-        [VIDEO STYLE]: 70s art-house film aesthetic; slow dolly; emulated 50mm f/1.4 wide open; shallow depth; Kodak Gold 200 texture; subtle halation.
-        [SCENE & NARRATIVE]: Quiet discovery in a dusty corner of an old independent bookstore at golden hour.
-        [SEQUENCE OF EVENTS]:
-        [0.0s - 2.0s]: Medium tracking shot down narrow aisle; volumetric god rays; dust motes; peaceful searching.
-        [2.0s - 5.0s]: Stops; slow push-in; focus rack to hand; traces embossed title; hyper-real leather texture and dust with displacement and roughness.
-        [5.0s - 7.0s]: Close-up slightly below eyeline; pulls book; subtle genuine smile; key light catches peach fuzz and tiny faded scar; freeze on expression.
-      </Accordion>
-    </AccordionGroup>
-  </div>
-</Columns>
-
-<Columns cols={2}>
-  <div>
-    <iframe
+    <video
       className="w-full aspect-video rounded-xl"
-      src="https://player.cloudinary.com/embed/?cloud_name=dffj8ly14&public_id=download_11_aaiuqa&profile=cld-default"
-      title="Subway isolation"
-      frameBorder="0"
-      referrerPolicy="strict-origin-when-cross-origin"
-      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-      allowFullScreen
-    ></iframe>
-  </div>
-  <div>
-    <AccordionGroup>
-      <Accordion icon="pen-to-square" title="Prompt used">
-        Ultra-realistic cinematic video, rendered in Unreal Engine 5 with path-traced global illumination.
-        [VIDEO STYLE]: Late 90s indie film; handheld sway; Kodak Vision3 500T; heavy cinematic grain; subtle gate weave; halation around highlights.
-        [SCENE & NARRATIVE]: Quiet, lonely isolation on a late-night subway car between stations.
-        [SEQUENCE OF EVENTS]:
-        [0.0s - 2.5s]: Medium close-up; head on scratched plexiglass; vacant gaze; cool fluorescent chiaroscuro; hyper-real skin texture and smudged eyeliner.
-        [2.5s - 5.0s]: Turns to camera; focus racks from reflection to eyes; single tear traces down cheek; flicker catches the tear.
-        [5.0s - 7.0s]: Pulling into station; warm platform lights sweep across; illuminate flyaway hairs and hoodie texture; ends on transient warmth before doors open.
-      </Accordion>
-    </AccordionGroup>
+      src="https://res.cloudinary.com/dffj8ly14/video/upload/download_11_aaiuqa.mp4"
+      controls
+      playsInline
+      loop
+      controlsList="nodownload noremoteplayback nofullscreen noplaybackrate"
+      disablePictureInPicture
+    ></video>
+    <small>Subway — isolation</small>
   </div>
 </Columns>
